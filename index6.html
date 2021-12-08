@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание 6</title>
+    <link rel="stylesheet" href="style6.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+    <div class="wrapper">
+        <h1>Форма</h1>
+        <form action="https://www.google.com/webhp"> 
+            <div class="field email">
+                <div class="input-area">
+                    <input type="text" placeholder="Почта">
+                    <i class="icon fas fa-envelope"></i>
+                    <i class="error error-icon fas fa-exclamation-circle"></i>
+                </div>
+                <div class="error error-txt"></div>
+            </div>
+            <div class="field password">
+                <div class="input-area">
+                    <input type="text" placeholder="Пароль">
+                    <i class="icon fas fa-lock"></i>
+                    <i class="error error-icon fas fa-exclamation-circle"></i>
+                </div>
+                <div class="error error-txt"></div>
+            </div>
+            <div class="pass-link"><a href="#">Забыли пароль?</a></div>
+            <input type="submit" value="Login">
+        </form>
+        <div class="signup-link">Нет аккаунта?<a href="#">Зарегистрируйтесь!</a></div>
+    </div>
+
+    <script src="form.js"></script>
+</body>
+</html>

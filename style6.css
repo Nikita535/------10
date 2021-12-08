@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #5372f0;
+}
+
+.wrapper{
+    width: 380px;
+    padding: 40px 30px 50px 30px;
+    background-color: #fff;
+    border-radius:5px ;
+}
+
+.wrapper h1{
+    font-size: 35px;
+    font-weight: 600;
+}
+
+form .field{
+    width: 100%;
+    margin-bottom: 20px;
+    
+}
+
+form .field.shake{
+    animation: shake 0.3s ease-in-out;
+}
+
+@keyframes shake{
+    0%, 100%{
+        margin-left: 0;
+    }
+    20%, 80%{
+        margin-left: -12px;
+    }
+    40%, 60%{
+        margin-left: 12px;
+    }
+}
+
+
+form .field .input-area{
+    position: relative;
+}
+
+.wrapper form{
+    margin: 40px 0;
+}
+
+form input{
+    height: 50px;
+    width: 100%;
+    padding: 0 45px;
+    font-size: 18px;
+    border-radius:5px;
+    border: 1px solid #bfbfbf;
+    border-bottom-width:2px ;
+    outline:none;
+}
+
+form input{
+    color:#bfbfbf;
+    font-size: 17px;
+}
+
+form .field i{
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+    pointer-events: none;
+}
+
+form .field .icon{
+    left: 15px;
+    color:#bfbfbf;
+}
+
+form .field .error-icon{
+    right: 15px;
+    color:red;
+}
+
+form .field .error-txt{
+    margin-top: 5px;
+    color:red;
+    text-align: left;
+}
+
+form .field .error{
+    display: none;
+}
+
+form .field.error .error{
+    display: block;
+}
+
+form .pass-link{
+    text-align: left;
+    margin-top: -10px;
+}
+
+.wrapper a{
+    color: #5372f0;
+    text-decoration:none;
+}
+
+.wrapper a:hover{
+    text-decoration: underline;
+}
+
+form input[type="submit"]{
+    margin-top: 30px;
+    border:none;
+    background:#5372f0;
+    color:#fff;
+    cursor:pointer;
+}
+
